@@ -9,7 +9,7 @@ object Test {
     val f = Figure()
     val p = f.subplot(0)
     val x = linspace(-100,100.0)
-    //分别是函数2x,3x
+    //**分别是函数2x,3x**
     p += plot(x,x:*2.0,'+')
     p += plot(x,x:*3.0, '.')
     p.xlabel = "x axis"
