@@ -21,5 +21,6 @@ object FeatureHash {
 
     val featurized = hasher.transform(dataset)
     featurized.show(false)
+
   }
 }
