@@ -11,15 +11,9 @@ object FpGrowth {
 
     val fPGrowth = new FPGrowth().setItemsCol("goods").setMinSupport(0.2).setMinConfidence(0.2)
     val growthModel = fPGrowth.fit(dataFrame)
-
-    // Display frequent itemsets
+    
     growthModel.freqItemsets.show()
-
-    // Display generated association rules.
     growthModel.associationRules.show()
-
-    // transform examines the input items against all the association rules and summarize the
-    // consequents as prediction
     growthModel.transform(dataFrame).show()
   }
 }
